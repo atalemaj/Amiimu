@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amiimu Gadgets - Your #1 Gaming Hub in Kampala</title>
+    <meta name="description" content="Amiimu Gadgets - Kampala's premier gaming store. PS5, PS4, Xbox, accessories, gaming chairs, repairs and more.">
+    <link rel="icon" type="image/png" href="Logo/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="Logo/logo.png" alt="Amiimu Gadgets Logo">
+                <span class="nav-logo-text">Amiimu<span>Gadgets</span></span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="Links/Shop.html" class="nav-link">Shop</a></li>
+                <li><a href="Links/About.html" class="nav-link">About</a></li>
+                <li><a href="Links/Contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <div class="nav-search">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search products..." id="searchInput" autocomplete="off">
+                    </div>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Search Results Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="Images/hero-bg.jpg" alt="Gaming Setup Background">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class='bx bx-joystick-button'></i>
+                Kampala's #1 Gaming Store
+            </div>
+            <h1 class="hero-title">
+                Your <span class="highlight-text">#1 Gaming Hub</span> in Kampala
+            </h1>
+            <p class="hero-subtitle">
+                PS5, Xbox, Accessories and Repairs. We bring the ultimate gaming experience right to your doorstep with premium consoles, games, and expert repair services.
+            </p>
+            <div class="hero-buttons">
+                <a href="Links/Shop.html" class="btn-primary">
+                    <i class='bx bx-store'></i> Browse Shop
+                </a>
+                <a href="Links/About.html" class="btn-secondary">
+                    <i class='bx bx-info-circle'></i> Learn More
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">500+</div>
+                    <div class="hero-stat-label">Products</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">2K+</div>
+                    <div class="hero-stat-label">Happy Gamers</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">5+</div>
+                    <div class="hero-stat-label">Years Experience</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">24/7</div>
+                    <div class="hero-stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section-padding" id="categories">
+        <div class="container">
+            <h2 class="section-title fade-in">Shop by <span class="highlight-text">Category</span></h2>
+            <p class="section-subtitle fade-in">Explore our wide range of gaming products, from the latest consoles to premium accessories</p>
+            <div class="categories-grid">
+                <a href="Links/Shop.html#playstation" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class='bx bx-joystick-button'></i>
+                    </div>
+                    <h3>PlayStation Consoles</h3>
+                    <p>PS5, PS4 Pro, PS4 Slim, PS3, PS2 and more</p>
+                </a>
+                <a href="Links/Shop.html#xbox" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <h3>Xbox Consoles</h3>
+                    <p>Xbox Series X, Series S, Xbox 360</p>
+                </a>
+                <a href="Links/Shop.html#accessories" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class='bx bx-headphone'></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Headsets, Controllers, Racing Wheels, Grips</p>
+                </a>
+                <a href="Links/Shop.html#chairs" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class='bx bx-chair'></i>
+                    </div>
+                    <h3>Gaming Chairs</h3>
+                    <p>Premium ergonomic gaming chairs for comfort</p>
+                </a>
+                <a href="Links/Shop.html#games" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class='bx bx-disc'></i>
+                    </div>
+                    <h3>Software and Games</h3>
+                    <p>Latest game titles for PS5, PS4 and more</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured section-padding" id="featured">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured <span class="highlight-text">Products</span></h2>
+            <p class="section-subtitle fade-in">Handpicked top-selling items that our gamers love the most</p>
+            <div class="featured-grid">
+                <!-- Product 1 -->
+                <div class="product-card fade-in">
+                    <span class="product-badge new">New</span>
+                    <div class="product-image">
+                        <img src="Images/ps5-console.png" alt="PS5 Slim Digital Edition">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">PlayStation 5</span>
+                        <h3 class="product-name">PS5 Slim Digital Edition - Brand New</h3>
+                        <p class="product-desc">The latest PlayStation 5 Slim in its digital-only form. Sleek design, ultra-fast SSD, ray tracing support and 4K gaming capability.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">2,600,000 <span class="currency">UGX</span></span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS5+Slim+Digital+Brand+New&price=2600000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card fade-in">
+                    <span class="product-badge hot">Hot</span>
+                    <div class="product-image">
+                        <img src="Images/ps5-console.png" alt="PS5 Slim CD Version">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">PlayStation 5</span>
+                        <h3 class="product-name">PS5 Slim CD Version - Brand New</h3>
+                        <p class="product-desc">The complete PS5 Slim experience with disc drive. Play physical and digital games, watch Blu-ray movies with stunning visuals.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">2,800,000 <span class="currency">UGX</span></span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS5+Slim+CD+Brand+New&price=2800000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card fade-in">
+                    <span class="product-badge top">Top</span>
+                    <div class="product-image">
+                        <img src="Images/ps4-console.png" alt="PS4 Pro">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">PlayStation 4</span>
+                        <h3 class="product-name">PS4 Pro Edition</h3>
+                        <p class="product-desc">The most powerful PS4 model with 4K gaming support. Includes 2 controllers, power cables and HDMI. Perfect for any gamer.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">1,200,000 <span class="currency">UGX</span></span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS4+Pro+Edition&price=1200000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="Images/ps5-controller.png" alt="PS5 Controller">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Controllers</span>
+                        <h3 class="product-name">PS5 DualSense Controller - Brand New</h3>
+                        <p class="product-desc">Experience immersive gaming with haptic feedback, adaptive triggers, and a built-in microphone. Available in multiple colors.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">280,000 <span class="currency">UGX</span></span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS5+DualSense+Controller+Brand+New&price=280000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="Images/gaming-headset.png" alt="Kotion G9000 Pro">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Headsets</span>
+                        <h3 class="product-name">Kotion G9000 Pro Gaming Headset</h3>
+                        <p class="product-desc">Premium wired gaming headset with surround sound. Available in Black/Blue, Red/Black, Army Mix, and Black/White color variants.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">Contact Us</span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <span>4.3</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=Kotion+G9000+Pro+Gaming+Headset&price=Contact+Us" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card fade-in">
+                    <span class="product-badge new">New</span>
+                    <div class="product-image">
+                        <img src="Images/gaming-chair.png" alt="Gaming Chair">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Gaming Chairs</span>
+                        <h3 class="product-name">Premium Gaming Chair</h3>
+                        <p class="product-desc">Ergonomic design with lumbar support, adjustable armrests, and premium cushioning. Built for extended gaming sessions in comfort.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">950,000 <span class="currency">UGX</span></span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=Premium+Gaming+Chair&price=950000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="Images/racing-wheel.png" alt="Racing Wheel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Racing</span>
+                        <h3 class="product-name">G29 Driving Force Racing Wheel</h3>
+                        <p class="product-desc">Professional-grade racing wheel setup compatible with PS3 to PS5 and Xbox series. Realistic force feedback for immersive racing.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">Contact Us</span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=G29+Driving+Force+Racing+Wheel&price=Contact+Us" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card fade-in">
+                    <span class="product-badge top">Top</span>
+                    <div class="product-image">
+                        <img src="Images/xbox-console.png" alt="Xbox Series X">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Xbox</span>
+                        <h3 class="product-name">Xbox Series X Console</h3>
+                        <p class="product-desc">The most powerful Xbox ever with 12 teraflops of processing power. 4K gaming at up to 120fps, quick resume, and backwards compatible.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">Contact Us</span>
+                            <div class="product-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=Xbox+Series+X+Console&price=Contact+Us" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="Links/Shop.html" class="btn-primary">
+                    <i class='bx bx-grid-alt'></i> View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Deals Section -->
+    <section class="top-deals section-padding" id="deals">
+        <div class="container">
+            <h2 class="section-title fade-in">Top <span class="highlight-text">Deals</span></h2>
+            <p class="section-subtitle fade-in">Don't miss out on these incredible offers - limited time only</p>
+            <div class="deals-grid">
+                <!-- Deal 1 -->
+                <div class="deal-card fade-in">
+                    <span class="deal-ribbon">Hot Deal</span>
+                    <div class="deal-image">
+                        <img src="Images/ps5-console.png" alt="PS5 Slim Digital Used">
+                    </div>
+                    <div class="deal-info">
+                        <h3>PS5 Slim Digital - Used (Excellent Condition)</h3>
+                        <p>Pre-owned PS5 Slim Digital in excellent working condition. Fully tested, cleaned and ready for your gaming sessions. Comes with controller and cables.</p>
+                        <div class="deal-prices">
+                            <span class="deal-current">2,300,000 UGX</span>
+                            <span class="deal-original">2,600,000 UGX</span>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS5+Slim+Digital+Used&price=2300000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="deal-card fade-in">
+                    <span class="deal-ribbon">Save Big</span>
+                    <div class="deal-image">
+                        <img src="Images/ps5-console.png" alt="PS5 Slim CD Used">
+                    </div>
+                    <div class="deal-info">
+                        <h3>PS5 Slim CD Version - Used (Excellent Condition)</h3>
+                        <p>Pre-owned PS5 Slim with disc drive in top condition. Enjoy both physical and digital games with full warranty and accessories included.</p>
+                        <div class="deal-prices">
+                            <span class="deal-current">2,400,000 UGX</span>
+                            <span class="deal-original">2,800,000 UGX</span>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS5+Slim+CD+Used&price=2400000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="deal-card fade-in">
+                    <span class="deal-ribbon">Best Value</span>
+                    <div class="deal-image">
+                        <img src="Images/ps4-console.png" alt="PS4 Standard">
+                    </div>
+                    <div class="deal-info">
+                        <h3>PS4 Standard with 2 Controllers</h3>
+                        <p>The classic PlayStation 4 experience. Includes two black controllers, power cables, HDMI cable and USB cable. Perfect entry point into PlayStation gaming.</p>
+                        <div class="deal-prices">
+                            <span class="deal-current">850,000 UGX</span>
+                            <span class="deal-original">1,000,000 UGX</span>
+                        </div>
+                        <a href="Links/Cart/cart.html?product=PS4+Standard+2+Controllers&price=850000" class="btn-order">
+                            <i class='bx bx-cart'></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose <span class="highlight-text">Amiimu Gadgets</span></h2>
+            <p class="section-subtitle fade-in">We are committed to providing the best gaming experience in Uganda</p>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class='bx bx-check-shield'></i>
+                    </div>
+                    <h3>Authentic Products</h3>
+                    <p>We guarantee 100% genuine products. Every console, controller, and accessory is sourced from authorized distributors, ensuring quality and reliability for our customers.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class='bx bx-wrench'></i>
+                    </div>
+                    <h3>Expert Repairs</h3>
+                    <p>Our skilled technicians handle all PlayStation and Xbox repairs. From hardware fixes to software issues, we restore your console to peak performance with genuine parts.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class='bx bx-truck'></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>We deliver across Uganda with reliable shipping partners. Orders within Kampala are delivered within 24 hours, and up-country deliveries arrive within 2-3 business days.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class='bx bx-support'></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is available around the clock. Reach us via WhatsApp, phone, or email for any questions, technical support, or order assistance you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter section-padding" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content fade-in">
+                <h2>Stay in the <span class="highlight-text">Game</span></h2>
+                <p>Subscribe to our newsletter and be the first to know about new arrivals, exclusive deals, and gaming news from Amiimu Gadgets.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required id="newsletterEmail">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="newsletterMsg" style="margin-top: 15px; display: none; color: var(--highlight);"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="Logo/logo.png" alt="Amiimu Gadgets">
+                        <span class="footer-logo-text">Amiimu<span>Gadgets</span></span>
+                    </div>
+                    <p>Kampala's premier gaming store. We provide authentic PlayStation, Xbox consoles, accessories, games, and professional repair services to gamers across Uganda.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class='bx bx-chevron-right'></i> Home</a></li>
+                        <li><a href="Links/Shop.html"><i class='bx bx-chevron-right'></i> Shop</a></li>
+                        <li><a href="Links/About.html"><i class='bx bx-chevron-right'></i> About Us</a></li>
+                        <li><a href="Links/Contact.html"><i class='bx bx-chevron-right'></i> Contact</a></li>
+                        <li><a href="Links/Cart/cart.html"><i class='bx bx-chevron-right'></i> Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="Links/About.html"><i class='bx bx-chevron-right'></i> Console Sales</a></li>
+                        <li><a href="Links/About.html"><i class='bx bx-chevron-right'></i> Game Sales</a></li>
+                        <li><a href="Links/About.html"><i class='bx bx-chevron-right'></i> Console Repairs</a></li>
+                        <li><a href="Links/About.html"><i class='bx bx-chevron-right'></i> Chipping Services</a></li>
+                        <li><a href="Links/About.html"><i class='bx bx-chevron-right'></i> Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact-item">
+                        <i class='bx bx-map'></i>
+                        <p>Kampala Road, EM Plaza, Level 2, Shop 407</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class='bx bx-phone'></i>
+                        <p>+256 743485380</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <p>amiimugadgets2026ug@gmail.com</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class='bx bxl-whatsapp'></i>
+                        <p>+256 743485380</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2026 Amiimu Gadgets. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256743485380" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
